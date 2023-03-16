@@ -1,0 +1,20 @@
+{
+  "extends": ["config:base"],
+  "postUpdateOptions": ["gomodTidy"],
+  "docker": {
+    "enabled": false
+  },
+  "docker-compose": {
+    "enabled": false
+  },
+  "labels": ["renovatebot"],
+  "prBodyNotes": [
+    "{{#if isMajor}}:warning: MAJOR MAJOR MAJOR :warning:{{/if}}"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["gomod"],
+      "digest": { "masterIssueApproval": true }
+    }
+  ]
+}
