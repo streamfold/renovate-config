@@ -19,6 +19,7 @@
     {
       "matchDatasources": ["go"],
       "matchPackagePrefixes": ["github.com/aws/aws-sdk-go-v2"],
+      "groupName": "aws-sdk-go-v2",
       "schedule": "before 3am on the first day of the month"
     }
   ]
