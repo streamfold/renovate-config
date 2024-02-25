@@ -9,6 +9,7 @@
   },
   "labels": ["renovatebot"],
   "rebaseWhen": "conflicted",
+  "keepUpdatedLabel": "automerge",
   "prBodyNotes": [
     "{{#if isMajor}}:warning: MAJOR MAJOR MAJOR :warning:{{/if}}"
   ],
